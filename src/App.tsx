@@ -60,8 +60,8 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen bg-[#05070b] text-slate-100">
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(237,28,36,0.2),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(53,213,255,0.13),transparent_24%),linear-gradient(180deg,#05070b,#090b12_55%,#05070b)]" />
+    <main className="min-h-screen overflow-x-hidden bg-[#05070b] text-slate-100">
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_8%,rgba(237,28,36,0.22),transparent_28%),radial-gradient(circle_at_65%_6%,rgba(255,138,31,0.13),transparent_24%),radial-gradient(circle_at_92%_22%,rgba(53,213,255,0.11),transparent_24%),linear-gradient(180deg,#05070b,#090b12_55%,#05070b)]" />
 
       {!hasStarted ? (
         <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center">
@@ -86,9 +86,9 @@ export default function App() {
           </p>
         </section>
       ) : (
-        <div className="mx-auto grid max-w-[1800px] gap-4 p-4 xl:grid-cols-[330px_minmax(720px,1fr)_360px]">
+        <div className="mx-auto grid max-w-[1920px] gap-4 p-4 xl:grid-cols-[310px_minmax(820px,1fr)_440px]">
           <header className="xl:col-span-3">
-            <div className="rounded-[1.5rem] border border-white/10 bg-amd-panel/80 p-5 backdrop-blur">
+            <div className="rounded-[1.5rem] border border-white/10 bg-amd-panel/80 p-5 shadow-2xl backdrop-blur">
               <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.35em] text-amd-red">Inside an AMD GPU</p>

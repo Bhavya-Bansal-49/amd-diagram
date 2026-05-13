@@ -22,7 +22,7 @@ const viewModes: { id: ViewMode; label: string }[] = [
 
 export default function Controls({ isPlaying, onPlayPause, onPrev, onNext, onReset, speed, setSpeed, viewMode, setViewMode }: ControlsProps) {
   return (
-    <div className="rounded-[1.5rem] border border-white/10 bg-amd-panel/90 p-4 backdrop-blur">
+    <div className="rounded-[1.5rem] border border-white/10 bg-amd-panel/90 p-4 shadow-xl shadow-black/20 backdrop-blur">
       <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
         <div className="flex flex-wrap items-center gap-2">
           <ControlButton label="Previous step" onClick={onPrev} icon={<SkipBack className="h-4 w-4" />} />
@@ -71,7 +71,7 @@ function ControlButton({ label, onClick, icon, primary = false }: { label: strin
       type="button"
       onClick={onClick}
       className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition ${
-        primary ? 'border-amd-red bg-amd-red text-white shadow-glow hover:bg-red-500' : 'border-white/10 bg-white/[0.04] text-slate-200 hover:border-white/25 hover:bg-white/[0.08]'
+        primary ? 'border-amd-red bg-gradient-to-r from-amd-red to-amd-orange text-white shadow-glow hover:brightness-110' : 'border-white/10 bg-white/[0.04] text-slate-200 hover:border-white/25 hover:bg-white/[0.08]'
       }`}
     >
       {icon}
