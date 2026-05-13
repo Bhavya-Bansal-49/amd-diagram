@@ -46,3 +46,12 @@ input {
   background: rgba(237, 28, 36, 0.45);
   border-radius: 999px;
 }
+
+::selection {
+  background: rgba(237, 28, 36, 0.42);
+  color: #fff;
+}
+
+input[type='range'] {
+  cursor: pointer;
+}
